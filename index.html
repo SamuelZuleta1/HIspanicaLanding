@@ -1,0 +1,813 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Constructora e Inmobiliaria - Construimos y gestionamos espacios para tu futuro. Proyectos de construcción y propiedades en venta y arriendo.">
+    <meta name="keywords" content="constructora, inmobiliaria, propiedades, apartamentos, casas, construcción, venta, arriendo">
+    <meta property="og:title" content="Constructora e Inmobiliaria - Tu futuro empieza aquí">
+    <meta property="og:description" content="Construimos y gestionamos espacios para tu futuro">
+    <meta property="og:type" content="website">
+    <title>Constructora e Inmobiliaria | Tu Futuro Empieza Aquí</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-building"></i>
+                <span>HISPANICA</span>
+            </a>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#proyectos" class="nav-link">Proyectos</a>
+                <a href="#propiedades" class="nav-link">Propiedades</a>
+                <a href="#nosotros" class="nav-link">Nosotros</a>
+                <a href="#servicios" class="nav-link">Servicios</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="btn-cta" data-target="#contacto">Agenda tu cita</button>
+                <button class="btn-login" data-target="#contacto">
+                    <i class="fas fa-user"></i> Iniciar sesión
+                </button>
+                <button class="mobile-toggle" id="mobileToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-video">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Construimos y gestionamos espacios para tu futuro</h1>
+            <p class="hero-subtitle">Más de 20 años transformando sueños en realidad</p>
+        </div>
+        
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+
+    <!-- Proyectos Disponibles -->
+    <section class="section proyectos-disponibles" id="proyectos_Disponibles">
+        <div class="container">
+            <h2 class="section-title">Proyectos Disponibles</h2>
+            <p class="section-subtitle">Descubre nuestras obras disponibles</p>
+
+            <div class="proyectos-grid">
+                <div class="proyecto-card" data-status="venta">
+                    <div class="proyecto-image">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800" alt="Arrecife">
+                        <span class="status-badge venta">En venta</span>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Arrecife</h3>
+                        <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> Entrada 16 el Tigre Vía cerritos</p>
+                        <p class="description">Exclusivas casas campestres en el prestigioso conjunto residencial privado de Cerritos. Vive rodeado de naturaleza y lujo en la zona más codiciada de Pereira.</p>
+                        <button class="btn-secondary" data-target="#proyectos">Ver más detalles</button>
+                    </div>
+                </div>
+
+                <div class="proyecto-card" data-status="venta">
+                    <div class="proyecto-image">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800" alt="Bélgica Lux">
+                        <span class="status-badge venta">En venta</span>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Bélgica Lux</h3>
+                        <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> Cerritos, Pereira</p>
+                        <p class="description">Lotes campestres premium en Cerritos, la zona de mayor lujo y plusvalía de Pereira. Tu oportunidad de construir el hogar de tus sueños en un entorno privilegiado.</p>
+                        <button class="btn-secondary" data-target="#proyectos">Ver más detalles</button>
+                    </div>
+                </div>
+
+                <div class="proyecto-card" data-status="entregado">
+                    <div class="proyecto-image">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800" alt="Balcones de Segovia">
+                        <span class="status-badge entregado">Entregado</span>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Balcones de Segovia</h3>
+                        <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> Cl. 34 #3-37 Calle 34 Nro, Dosquebradas, Risaralda</p>
+                        <p class="description">Moderno conjunto residencial en Dosquebradas con excelente ubicación, zonas comunes, seguridad 24/7 y espacios diseñados para el bienestar de tu familia.</p>
+                        <button class="btn-secondary" data-target="#proyectos">Ver más detalles</button>
+                    </div>
+                </div>
+
+                <div class="proyecto-card" data-status="construccion">
+                    <div class="proyecto-image">
+                        <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?w=800" alt="Arrecife 2">
+                        <span class="status-badge construccion">En construcción</span>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Arrecife 2</h3>
+                        <p class="ubicacion"><i class="fas fa-map-marker-alt"></i>  Entrada 16 el Tigre Vía cerritos</p>
+                        <p class="description">Segunda fase del exclusivo conjunto residencial de Cerritos. Casas campestres de lujo con clubhouse, amplias zonas verdes y todas las comodidades en el sector más privilegiado.</p>
+                        <button class="btn-secondary" data-target="#proyectos">Ver más detalles</button>
+                    </div>
+                </div>
+
+                <div class="proyecto-card" data-status="construccion">
+                    <div class="proyecto-image">
+                        <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?w=800" alt="Portal de Providencia">
+                        <span class="status-badge construccion">En construcción</span>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Portal de Providencia</h3>
+                        <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> Calle 21 B # 20-10, barrio Providencia</p>
+                        <p class="description">Conjunto residencial con excelente relación calidad-precio. Viviendas cómodas, seguras y bien ubicadas, ideales para familias que buscan tranquilidad y accesibilidad.</p>
+                        <button class="btn-secondary" data-target="#proyectos">Ver más detalles</button>
+                    </div>
+                </div>
+
+                <div class="proyecto-card" data-status="construccion">
+                    <div class="proyecto-image">
+                        <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?w=800" alt="Pradera Verde">
+                        <span class="status-badge construccion">En construcción</span>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Pradera Verde</h3>
+                        <p class="ubicacion"><i class="fas fa-map-marker-alt"></i>  Dg. 25a #24T-151, Dosquebradas, Risaralda</p>
+                        <p class="description">Conjunto residencial con amplias zonas verdes en Dosquebradas. Espacios modernos, seguros y diseñados para disfrutar en familia.</p>
+                        <button class="btn-secondary" data-target="#proyectos">Ver más detalles</button>
+                    </div>
+                </div>
+
+                <div class="proyecto-card" data-status="construccion">
+                    <div class="proyecto-image">
+                        <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?w=800" alt="Proyecto ">
+                        <span class="status-badge construccion">En construcción</span>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>San Rafael de Maraya</h3>
+                        <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> Cra. 11 #44-63, Pereira, Risaralda</p>
+                        <p class="description">Edificio de uso mixto en el corazón de Pereira. Modernas unidades residenciales con locales comerciales en el primer piso, perfectos para vivir e invertir en el mismo lugar.</p>
+                        <button class="btn-secondary" data-target="#proyectos">Ver más detalles</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos Entregados -->
+    <section class="section proyectos" id="proyectos">
+        <div class="container">
+            <h2 class="section-title">Proyectos Entregados</h2>
+            <p class="section-subtitle">Descubre nuestras obras terminadas</p>
+
+
+            <div class="proyectos-grid">
+                <div class="proyecto-card" data-status="venta">
+                    <div class="proyecto-image">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800" alt="Arrecife">
+                        <span class="status-badge venta">En venta</span>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Arrecife</h3>
+                        <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> Entrada 16 el Tigre Vía cerritos</p>
+                        <p class="description">Exclusivas casas campestres en el prestigioso conjunto residencial privado de Cerritos. Vive rodeado de naturaleza y lujo en la zona más codiciada de Pereira.</p>
+                        <button class="btn-secondary" data-target="#proyectos">Ver más detalles</button>
+                    </div>
+                </div>
+
+                <div class="proyecto-card" data-status="venta">
+                    <div class="proyecto-image">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800" alt="Bélgica Lux">
+                        <span class="status-badge venta">En venta</span>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Bélgica Lux</h3>
+                        <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> Cerritos, Pereira</p>
+                        <p class="description">Lotes campestres premium en Cerritos, la zona de mayor lujo y plusvalía de Pereira. Tu oportunidad de construir el hogar de tus sueños en un entorno privilegiado.</p>
+                        <button class="btn-secondary" data-target="#proyectos">Ver más detalles</button>
+                    </div>
+                </div>
+
+                <div class="proyecto-card" data-status="entregado">
+                    <div class="proyecto-image">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800" alt="Balcones de Segovia">
+                        <span class="status-badge entregado">Entregado</span>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Balcones de Segovia</h3>
+                        <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> Cl. 34 #3-37 Calle 34 Nro, Dosquebradas, Risaralda</p>
+                        <p class="description">Moderno conjunto residencial en Dosquebradas con excelente ubicación, zonas comunes, seguridad 24/7 y espacios diseñados para el bienestar de tu familia.</p>
+                        <button class="btn-secondary" data-target="#proyectos">Ver más detalles</button>
+                    </div>
+                </div>
+
+                <div class="proyecto-card" data-status="construccion">
+                    <div class="proyecto-image">
+                        <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?w=800" alt="Arrecife 2">
+                        <span class="status-badge construccion">En construcción</span>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Arrecife 2</h3>
+                        <p class="ubicacion"><i class="fas fa-map-marker-alt"></i>  Entrada 16 el Tigre Vía cerritos</p>
+                        <p class="description">Segunda fase del exclusivo conjunto residencial de Cerritos. Casas campestres de lujo con clubhouse, amplias zonas verdes y todas las comodidades en el sector más privilegiado.</p>
+                        <button class="btn-secondary" data-target="#proyectos">Ver más detalles</button>
+                    </div>
+                </div>
+
+
+                <div class="proyecto-card" data-status="construccion">
+                    <div class="proyecto-image">
+                        <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?w=800" alt="Portal de Providencia">
+                        <span class="status-badge construccion">En construcción</span>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Portal de Providencia</h3>
+                        <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> Calle 21 B # 20-10, barrio Providencia</p>
+                        <p class="description">Conjunto residencial con excelente relación calidad-precio. Viviendas cómodas, seguras y bien ubicadas, ideales para familias que buscan tranquilidad y accesibilidad.</p>
+                        <button class="btn-secondary" data-target="#proyectos">Ver más detalles</button>
+                    </div>
+                </div>
+
+                
+                <div class="proyecto-card" data-status="construccion">
+                    <div class="proyecto-image">
+                        <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?w=800" alt="Pradera Verde">
+                        <span class="status-badge construccion">En construcción</span>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Pradera Verde</h3>
+                        <p class="ubicacion"><i class="fas fa-map-marker-alt"></i>  Dg. 25a #24T-151, Dosquebradas, Risaralda</p>
+                        <p class="description">Conjunto residencial con amplias zonas verdes en Dosquebradas. Espacios modernos, seguros y diseñados para disfrutar en familia.</p>
+                        <button class="btn-secondary" data-target="#proyectos">Ver más detalles</button>
+                    </div>
+                </div>
+
+                
+                <div class="proyecto-card" data-status="construccion">
+                    <div class="proyecto-image">
+                        <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?w=800" alt="Proyecto ">
+                        <span class="status-badge construccion">En construcción</span>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>San Rafael de Maraya</h3>
+                        <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> Cra. 11 #44-63, Pereira, Risaralda</p>
+                        <p class="description">Edificio de uso mixto en el corazón de Pereira. Modernas unidades residenciales con locales comerciales en el primer piso, perfectos para vivir e invertir en el mismo lugar.</p>
+                        <button class="btn-secondary" data-target="#proyectos">Ver más detalles</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Propiedades Destacadas -->
+    <section class="section propiedades" id="propiedades">
+        <div class="container">
+            <h2 class="section-title">Encuentra tu Propiedad Ideal</h2>
+            <p class="section-subtitle">Filtra y descubre el inmueble perfecto para ti</p>
+            
+            <!-- Filtros -->
+            <div class="filtros-container">
+                <div class="filtro-group">
+                    <select id="tipoPropiedad" class="filtro-select">
+                        <option value="">Tipo de propiedad</option>
+                        <option value="apartamento">Apartamento</option>
+                        <option value="casa">Casa</option>
+                        <option value="oficina">Oficina</option>
+                        <option value="local">Local comercial</option>
+                        <option value="lote">Lote</option>
+                    </select>
+                </div>
+                <div class="filtro-group">
+                    <select id="ciudad" class="filtro-select">
+                        <option value="">Ciudad</option>
+                        <option value="bogota">Bogotá</option>
+                        <option value="medellin">Medellín</option>
+                        <option value="cali">Cali</option>
+                        <option value="barranquilla">Barranquilla</option>
+                    </select>
+                </div>
+                <div class="filtro-group">
+                    <select id="precio" class="filtro-select">
+                        <option value="">Rango de precio</option>
+                        <option value="0-200">Hasta $200M</option>
+                        <option value="200-400">$200M - $400M</option>
+                        <option value="400-600">$400M - $600M</option>
+                        <option value="600+">Más de $600M</option>
+                    </select>
+                </div>
+                <div class="filtro-group">
+                    <input type="text" id="buscador" class="filtro-input" placeholder="Buscar por palabra clave...">
+                </div>
+            </div>
+
+            <div class="propiedades-grid">
+                <div class="propiedad-card" data-tipo="apartamento">
+                    <div class="propiedad-image">
+                        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800" alt="Apartamento 1">
+                        <button class="btn-favorito" data-favorite aria-label="Favorito"><i class="far fa-heart"></i></button>
+                        <span class="estado-badge disponible">Disponible</span>
+                    </div>
+                    <div class="propiedad-info">
+                        <span class="tipo">Apartamento</span>
+                        <h3>Apartamento Moderno en Rosales</h3>
+                        <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> Bogotá, Chapinero</p>
+                        <div class="caracteristicas">
+                            <span><i class="fas fa-bed"></i> 3 hab</span>
+                            <span><i class="fas fa-bath"></i> 2 baños</span>
+                            <span><i class="fas fa-ruler-combined"></i> 85m²</span>
+                        </div>
+                        <p class="precio">$420.000.000</p>
+                        <button class="btn-secondary" data-target="#propiedades">Ver propiedad</button>
+                    </div>
+                </div>
+
+                <div class="propiedad-card" data-tipo="casa">
+                    <div class="propiedad-image">
+                        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800" alt="Casa 1">
+                        <button class="btn-favorito" data-favorite aria-label="Favorito"><i class="far fa-heart"></i></button>
+                        <span class="estado-badge disponible">Disponible</span>
+                    </div>
+                    <div class="propiedad-info">
+                        <span class="tipo">Casa</span>
+                        <h3>Casa Campestre con Jardín</h3>
+                        <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> Medellín, El Poblado</p>
+                        <div class="caracteristicas">
+                            <span><i class="fas fa-bed"></i> 4 hab</span>
+                            <span><i class="fas fa-bath"></i> 3 baños</span>
+                            <span><i class="fas fa-ruler-combined"></i> 180m²</span>
+                        </div>
+                        <p class="precio">$650.000.000</p>
+                        <button class="btn-secondary" data-target="#propiedades">Ver propiedad</button>
+                    </div>
+                </div>
+
+                <div class="propiedad-card" data-tipo="oficina">
+                    <div class="propiedad-image">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800" alt="Oficina 1">
+                        <button class="btn-favorito"><i class="far fa-heart"></i></button>
+                        <span class="estado-badge arriendo">En arriendo</span>
+                    </div>
+                    <div class="propiedad-info">
+                        <span class="tipo">Oficina</span>
+                        <h3>Oficina Corporativa Premium</h3>
+                        <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> Cali, Norte</p>
+                        <div class="caracteristicas">
+                            <span><i class="fas fa-door-open"></i> 8 oficinas</span>
+                            <span><i class="fas fa-users"></i> Sala juntas</span>
+                            <span><i class="fas fa-ruler-combined"></i> 250m²</span>
+                        </div>
+                        <p class="precio">$8.500.000/mes</p>
+                        <button class="btn-secondary" data-target="#propiedades">Ver propiedad</button>
+                    </div>
+                </div>
+
+                <div class="propiedad-card" data-tipo="local">
+                    <div class="propiedad-image">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800" alt="Local 1">
+                        <button class="btn-favorito"><i class="far fa-heart"></i></button>
+                        <span class="estado-badge disponible">Disponible</span>
+                    </div>
+                    <div class="propiedad-info">
+                        <span class="tipo">Local comercial</span>
+                        <h3>Local en Centro Comercial</h3>
+                        <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> Barranquilla, Norte</p>
+                        <div class="caracteristicas">
+                            <span><i class="fas fa-store"></i> Primer piso</span>
+                            <span><i class="fas fa-parking"></i> Parqueadero</span>
+                            <span><i class="fas fa-ruler-combined"></i> 120m²</span>
+                        </div>
+                        <p class="precio">$380.000.000</p>
+                        <button class="btn-secondary" data-target="#propiedades">Ver propiedad</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="section servicios" id="servicios">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <p class="section-subtitle">Soluciones integrales para tu proyecto</p>
+            
+            <div class="servicios-grid">
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                    <h3>Diseño Arquitectónico</h3>
+                    <p>Proyectos personalizados con visión moderna y funcional</p>
+                </div>
+
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Construcción Sostenible</h3>
+                    <p>Edificaciones eco-amigables con certificación LEED</p>
+                </div>
+
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Ventas y Asesoría</h3>
+                    <p>Acompañamiento en compra, venta y arriendo de inmuebles</p>
+                </div>
+
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Administración de Inmuebles</h3>
+                    <p>Gestión profesional de propiedades y conjuntos residenciales</p>
+                </div>
+
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Remodelaciones Corporativas</h3>
+                    <p>Transformamos espacios comerciales y oficinas</p>
+                    </div>
+
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Avalúos y Estudios</h3>
+                    <p>Análisis de mercado y valoración de propiedades</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section class="section nosotros" id="nosotros">
+        <div class="container">
+            <div class="nosotros-content">
+                <div class="nosotros-image">
+                    <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800" alt="Equipo">
+                </div>
+                <div class="nosotros-text">
+                    <h2 class="section-title">Quiénes Somos</h2>
+                    <p>Con más de 20 años de experiencia en el sector de la construcción e inmobiliaria, nos hemos consolidado como líderes en el desarrollo de proyectos residenciales, comerciales y corporativos.</p>
+                    <p>Nuestra misión es crear espacios que transformen vidas, combinando innovación, calidad y sostenibilidad en cada proyecto.</p>
+                    
+                    <div class="valores">
+                        <div class="valor-item">
+                            <i class="fas fa-bullseye"></i>
+                            <h4>Misión</h4>
+                            <p>Construir espacios de calidad que superen las expectativas de nuestros clientes</p>
+                        </div>
+                        <div class="valor-item">
+                            <i class="fas fa-eye"></i>
+                            <h4>Visión</h4>
+                            <p>Ser la constructora e inmobiliaria líder en innovación y sostenibilidad</p>
+                        </div>
+                        <div class="valor-item">
+                            <i class="fas fa-heart"></i>
+                            <h4>Valores</h4>
+                            <p>Integridad, excelencia, compromiso y responsabilidad social</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-container">
+                <div class="stat-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span class="stat-number" data-target="20">0</span>
+                    <span class="stat-label">Años de experiencia</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-building"></i>
+                    <span class="stat-number" data-target="150">0</span>
+                    <span class="stat-label">Proyectos entregados</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-home"></i>
+                    <span class="stat-number" data-target="500">0</span>
+                    <span class="stat-label">Propiedades gestionadas</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <span class="stat-number" data-target="2500">0</span>
+                    <span class="stat-label">Clientes felices</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="section testimonios" id="testimonios">
+        <div class="container">
+            <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+            <p class="section-subtitle">Testimonios reales de quienes confiaron en nosotros</p>
+            
+            <div class="testimonios-slider" id="testimoniosSlider">
+                <div class="testimonio-card">
+                    <div class="testimonio-header">
+                        <img src="https://i.pravatar.cc/150?img=1" alt="Cliente 1" class="testimonio-avatar">
+                        <div>
+                            <h4>Carlos Martínez</h4>
+                            <p class="testimonio-proyecto">Compró apartamento en Torres del Parque</p>
+                        </div>
+                    </div>
+                    <div class="testimonio-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonio-text">"Excelente atención desde el primer día. El proceso de compra fue transparente y el equipo estuvo siempre disponible para resolver todas mis dudas. Mi familia está feliz en nuestro nuevo hogar."</p>
+                </div>
+
+                <div class="testimonio-card">
+                    <div class="testimonio-header">
+                        <img src="https://i.pravatar.cc/150?img=5" alt="Cliente 2" class="testimonio-avatar">
+                        <div>
+                            <h4>María González</h4>
+                            <p class="testimonio-proyecto">Invirtió en Reserva del Bosque</p>
+                        </div>
+                    </div>
+                    <div class="testimonio-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonio-text">"La mejor inversión que he hecho. La calidad de construcción es excepcional y las zonas comunes superaron mis expectativas. Totalmente recomendados."</p>
+                </div>
+
+                <div class="testimonio-card">
+                    <div class="testimonio-header">
+                        <img src="https://i.pravatar.cc/150?img=8" alt="Cliente 3" class="testimonio-avatar">
+                        <div>
+                            <h4>Jorge Rodríguez</h4>
+                            <p class="testimonio-proyecto">Arrendó oficina en Centro Citymax</p>
+                        </div>
+                    </div>
+                    <div class="testimonio-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonio-text">"Profesionalismo en cada etapa. Encontramos la oficina perfecta para nuestra empresa y el proceso de arriendo fue muy ágil. El equipo de administración es muy atento."</p>
+                </div>
+            </div>
+
+            <div class="slider-dots" id="sliderDots"></div>
+        </div>
+    </section> <!-- Testimonios -->
+
+    <!-- Sección de Noticias eliminada -->
+
+<section class="section aliados">
+        <div class="container">
+            <h2 class="section-title">Nuestros Aliados</h2>
+            <div class="aliados-grid">
+                <div class="aliado-item">
+                    <i class="fas fa-university"></i>
+                    <p>Banco de la República</p>
+                </div>
+                <div class="aliado-item">
+                    <i class="fas fa-certificate"></i>
+                    <p>Certificación LEED</p>
+                </div>
+                <div class="aliado-item">
+                    <i class="fas fa-handshake"></i>
+                    <p>Camacol</p>
+                </div>
+                <div class="aliado-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <p>ISO 9001</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="section contacto" id="contacto">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <p class="section-subtitle">Estamos listos para ayudarte a encontrar tu propiedad ideal</p>
+            
+            <div class="contacto-content">
+                <div class="contacto-form-wrapper">
+                    <form class="contacto-form" id="contactoForm">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo *</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Correo electrónico *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telefono">Teléfono *</label>
+                            <input type="tel" id="telefono" name="telefono" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="interes">Me interesa *</label>
+                            <select id="interes" name="interes" required>
+                                <option value="">Seleccione una opción</option>
+                                <option value="proyecto1">Torres del Parque</option>
+                                <option value="proyecto2">Reserva del Bosque</option>
+                                <option value="proyecto3">Centro Empresarial Citymax</option>
+                                <option value="proyecto4">Villa del Río</option>
+                                <option value="otro">Otro proyecto o propiedad</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-submit">Enviar mensaje</button>
+                    </form>
+                </div>
+                
+                <div class="contacto-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Dirección Principal</h4>
+                            <p>Calle 100 #15-20, Bogotá, Colombia</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Teléfonos</h4>
+                            <p>(+57) 601 234 5678<br>(+57) 310 123 4567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@constructora.com<br>ventas@constructora.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horario de atención</h4>
+                            <p>Lunes a Viernes: 8:00 AM - 6:00 PM<br>Sábados: 9:00 AM - 2:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mapa-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.6234567890123!2d-74.05!3d4.68!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNMKwNDAnNDguMCJOIDc0wrAwMycwMC4wIlc!5e0!3m2!1ses!2sco!4v1234567890123!5m2!1ses!2sco" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sobre Nosotros</h4>
+                    <p>Constructora e inmobiliaria líder con más de 20 años transformando sueños en realidad.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#propiedades">Propiedades</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Diseño Arquitectónico</a></li>
+                        <li><a href="#">Construcción</a></li>
+                        <li><a href="#">Ventas</a></li>
+                        <li><a href="#">Administración</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Cookies</a></li>
+                        <li><a href="#">PQRS</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Constructora e Inmobiliaria. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botones Flotantes -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/573101234567" class="btn-whatsapp" target="_blank" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <button class="btn-scroll-top" id="scrollTop" aria-label="Volver arriba">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <!-- Modal de Proyecto -->
+    <div class="modal-overlay" id="proyectoModal">
+        <div class="modal-container">
+            <button class="modal-close" id="modalClose" aria-label="Cerrar modal">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="modal-content">
+                <div class="modal-gallery">
+                    <div class="gallery-main">
+                        <img id="modalMainImage" src="" alt="Proyecto">
+                        <button class="gallery-nav gallery-prev" id="galleryPrev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="gallery-nav gallery-next" id="galleryNext">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <div class="gallery-counter" id="galleryCounter">1 / 5</div>
+                    </div>
+                    <div class="gallery-thumbnails" id="galleryThumbnails"></div>
+                </div>
+                
+                <div class="modal-details">
+                    <h2 id="modalTitle">Título del Proyecto</h2>
+                    <p class="modal-ubicacion">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span id="modalUbicacion">Ubicación</span>
+                    </p>
+                    <span class="modal-status" id="modalStatus">Estado</span>
+                    
+                    <div class="modal-description">
+                        <h3>Descripción</h3>
+                        <p id="modalDescripcion">Descripción del proyecto...</p>
+                    </div>
+                    
+                    <div class="modal-caracteristicas">
+                        <h3>Características</h3>
+                        <ul id="modalCaracteristicas"></ul>
+                    </div>
+                    
+                    <div class="modal-actions">
+                        <button class="btn-primary" data-target="#contacto" id="modalContacto">
+                            <i class="fas fa-phone"></i> Contactar
+                        </button>
+                        <button class="btn-secondary" id="modalFavorito">
+                            <i class="far fa-heart"></i> Guardar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
